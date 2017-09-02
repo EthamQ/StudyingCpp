@@ -1,5 +1,4 @@
-// "ConsoleApplication3.cpp": Definiert den Einstiegspunkt für die Konsolenanwendung.
-//
+
 
 #include "stdafx.h"
 #include "string"
