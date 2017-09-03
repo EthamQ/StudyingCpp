@@ -6,9 +6,11 @@
 
 using namespace std;
 
-//Task: 
-//Coding Interview Question: Given an integer, 
-//write a function to return its roman numeral representation.
+
+//------------------------------------------------------------------------------
+//TASK: 
+//Given an integer, write a function to return its roman numeral representation.
+//------------------------------------------------------------------------------
 
 //Define functions
 string roman(int value);
@@ -66,7 +68,12 @@ string convert(int currentValue, int position) {
 
 }
 
+//For now only accepts numbers up to 999
 string roman(int value) {
+	if (value <= 0 || value > 999) {
+		return "Your number has to be bigger than 0 and the current supported maximum is 999.";
+	}
+
 	//Hint: for a definition of the variable position look at the documentation of the convert function
 
 	//initializing the string i want to return with its last digit in roman representation
@@ -103,7 +110,7 @@ string roman(int value) {
 int main()
 {
 
-	cout << roman(854);
+	cout << roman(-1);
 	cin.get();
 	return 0;
 }
